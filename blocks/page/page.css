@@ -24,5 +24,24 @@
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility; 
+    text-rendering: optimizeLegibility;
+    display: grid;
+    grid-template-columns: 1fr minmax(768px, 982px) 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "header header header"
+    ". lead ."
+    ". intro ."
+    "photo-grid photo-grid photo-grid";
   }
+
+@media screen and (max-width: 768px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "lead"
+    "intro"
+    "photo-grid";
+  }   
+}
