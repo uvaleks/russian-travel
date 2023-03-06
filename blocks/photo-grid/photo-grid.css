@@ -4,6 +4,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     padding: 0 48px 92px;
+    transition: all .5s ease;
 }
 
 @media screen and (max-width: 1024px) {
@@ -22,7 +23,7 @@
     }   
 }
 
-@media screen and (max-width: 318px) {
+@media screen and (max-width: 425px) {
     .photo-grid {
         grid-template-columns: 1fr;
         gap: 12px;

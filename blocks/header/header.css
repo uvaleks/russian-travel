@@ -5,6 +5,7 @@
     justify-content: space-between;
     height: 52px;
     padding: 28px 48px 56px 28px;
+    transition: all .5s ease;
 }
 
 @media screen and (max-width: 768px) {
