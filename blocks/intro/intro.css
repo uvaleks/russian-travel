@@ -1,6 +1,6 @@
 .intro {
     grid-area: intro;
-    width: 690px;
+    max-width: 690px;
     justify-self: start;
     box-sizing: border-box;
     padding: 0 48px 92px;

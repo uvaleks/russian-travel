@@ -1,0 +1,39 @@
+.cover__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 92px);
+    padding: 0 48px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    background-color: var(--overlay-transparent);
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.cover__overlay:hover {
+    background-color: var(--overlay);
+}
+
+@media screen and (max-width: 1024px) {
+    .cover__overlay {
+        padding: 0;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .cover__overlay {
+        height: calc(100% - 88px);
+    }   
+}
+
+@media screen and (max-width: 425px) {
+    .cover__overlay {
+        gap: 16px;
+    }   
+}

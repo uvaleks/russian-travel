@@ -2,4 +2,6 @@
     --bg: #2a2c2f;
     --text: #fff;
     --subtext: #aaa;
+    --overlay: rgba(42, 44, 47, .8);
+    --overlay-transparent: rgba(42, 44, 47, .3);
 }

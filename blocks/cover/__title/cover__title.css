@@ -1,35 +1,25 @@
-.places__title {
+.cover__title {
+    width: 560px;
     color: var(--text);
     font-size: 72px;
     font-weight: 900;
     line-height: 76px;
+    text-align: center;
     margin: 0;
+    box-sizing: border-box;
     transition: all .5s ease;
 }
 
-@media screen and (max-width: 1024px) {
-    .places__title {
-        font-size: 55px;
-        line-height: 60px;
-    }   
-}
-
 @media screen and (max-width: 768px) {
-    .places__title {
-        font-size: 42px;
+    .cover__title {
+        font-size: 52px;
         line-height: 46px;
     }   
 }
 
-@media screen and (max-width: 512px) {
-    .places__title {
-        font-size: 35px;
-        line-height: 38px;
-    }   
-}
-
 @media screen and (max-width: 425px) {
-    .places__title {
+    .cover__title {
+        width: 100%;
         font-size: 32px;
         line-height: 35px;
         padding: 0 16px;

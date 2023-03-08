@@ -6,16 +6,22 @@
     transition: all .5s ease;
 }
 
+@media screen and (max-width: 1280px) {
+    .places__place {
+        grid-template-columns: minmax(calc(50% - 40px/2), 440px) auto;
+    }   
+}
+
 @media screen and (max-width: 1024px) {
     .places__place {
-        grid-template-columns: minmax(calc(50% - 128px), 440px) auto;
+        grid-template-columns: minmax(calc(50% - 32px/2), 340px) auto;
         column-gap: 32px;
     }   
 }
 
 @media screen and (max-width: 768px) {
     .places__place {
-        grid-template-columns: minmax(calc(50% - 76px), 340px) auto;
+        grid-template-columns: calc(50% - 28px/2) auto;
         column-gap: 28px;
     }   
 }
