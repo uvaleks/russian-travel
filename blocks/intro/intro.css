@@ -7,16 +7,16 @@
     transition: all .5s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .intro {
-        width: 100%;
-        padding: 0 24px 92px;
+        max-width: 100%;
+        padding: 0 24px 88px;
     }   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
     .intro {
-        padding: 0 16px 88px;
+        padding: 0 16px 64px;
     }   
 }
 

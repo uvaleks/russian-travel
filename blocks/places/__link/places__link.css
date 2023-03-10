@@ -10,10 +10,3 @@
 .places__link:hover {
     opacity: .8;
 }
-
-@media screen and (max-width: 512px) {
-    .places__link {
-        font-size: 16px;
-        line-height: 20px;
-    }   
-}

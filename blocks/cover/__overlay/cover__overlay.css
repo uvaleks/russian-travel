@@ -1,34 +1,52 @@
 .cover__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: calc(100% - 92px);
-    padding: 0 48px;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 32px;
-    background-color: var(--overlay-transparent);
+    background-image: url(/images/cover/cover-baikal-tains_1184.png);
+    background-size: cover;
     text-decoration: none;
     transition: all .5s ease;
 }
 
-.cover__overlay:hover {
+.cover__overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: calc(100% - 92px);
     background-color: var(--overlay);
+    opacity: .3;
+    transition: all .5s ease;
+}
+
+.cover__overlay:hover::after {
+    opacity: .8;
 }
 
 @media screen and (max-width: 1024px) {
     .cover__overlay {
-        padding: 0;
+        background-image: url(/images/cover/cover-baikal-tains_1024.png);
     }   
 }
 
 @media screen and (max-width: 768px) {
     .cover__overlay {
-        height: calc(100% - 88px);
+        background-image: url(/images/cover/cover-baikal-tains_768.png);
+    }   
+}
+
+@media screen and (max-width: 320px) {
+    .cover__overlay {
+        background-image: url(/images/cover/cover-baikal-tains_320.png);
     }   
 }
 
@@ -37,3 +55,16 @@
         gap: 16px;
     }   
 }
+
+@media screen and (max-width: 768px) {
+    .cover__overlay::after {
+        min-height: calc(100% - 88px);
+    }   
+}
+
+@media screen and (max-width: 425px) {
+    .cover__overlay::after {
+        min-height: calc(100% - 64px);
+    }   
+}
+

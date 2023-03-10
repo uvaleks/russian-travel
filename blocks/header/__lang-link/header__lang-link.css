@@ -8,13 +8,13 @@
     transition: all .5s ease;
 }
 
-@media screen and (max-width: 768px) {
+.header__lang-link:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 425px) {
     .header__lang-link {
         font-size: 18px;
         line-height: 20px;
     }   
-}
-
-.header__lang-link:hover {
-    opacity: .8;
 }

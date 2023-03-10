@@ -7,7 +7,7 @@
     transition: all .5s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
     .places__title {
         font-size: 55px;
         line-height: 60px;
@@ -23,8 +23,8 @@
 
 @media screen and (max-width: 512px) {
     .places__title {
-        font-size: 35px;
-        line-height: 38px;
+        font-size: 28px;
+        line-height: 30px;
     }   
 }
 
@@ -32,6 +32,11 @@
     .places__title {
         font-size: 32px;
         line-height: 35px;
+    }   
+}
+
+@media screen and (max-width: 425px) {
+    .places__title {
         padding: 0 16px;
     }   
 }

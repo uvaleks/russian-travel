@@ -4,15 +4,15 @@
     transition: all .5s ease;
 }
 
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 700px) {
     .footer__nav {
         gap: 14px;
     }   
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 512px) {
     .footer__nav {
-        gap: 10px;
+        gap: 8px;
     }   
 }
 

@@ -8,20 +8,15 @@
     transition: all .5s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .footer {
         padding: 0 24px 24px;
     }   
 }
 
-@media screen and (max-width: 768px) {
-    .footer {
-        padding: 0 16px 24px;
-    }   
-}
-
 @media screen and (max-width: 425px) {
     .footer {
+        padding: 0 16px 24px;
         flex-direction: column;
         gap: 48px;
     }   

@@ -19,9 +19,9 @@
     }   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .places__place {
-        grid-template-columns: calc(50% - 28px/2) auto;
+        grid-template-columns: calc(50% - 28px/2 - 16px*2) auto;
         column-gap: 28px;
     }   
 }

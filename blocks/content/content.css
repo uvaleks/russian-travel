@@ -1,0 +1,18 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr minmax(768px, 1080px) 1fr;
+    grid-template-areas:
+    ". lead ."
+    ". intro ."
+    "photo-grid photo-grid photo-grid"
+    ". places ."
+    "cover cover cover";
+    justify-items: center;
+    transition: all .5s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+    grid-template-columns: 1fr;
+    }   
+}
