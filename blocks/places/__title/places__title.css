@@ -32,11 +32,6 @@
     .places__title {
         font-size: 32px;
         line-height: 35px;
-    }   
-}
-
-@media screen and (max-width: 425px) {
-    .places__title {
         padding: 0 16px;
     }   
 }
